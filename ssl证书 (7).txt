@@ -1,0 +1,5 @@
+./acme.sh --issue --dns dns_cf -d pp.dsjfd.xyz -d www.example.com
+
+sudo iptables -I INPUT -s 0.0.0.0/0 -p udp --dport 3389 -j ACCEPT
+sudo iptables -I INPUT -s 0.0.0.0/0 -p tcp --dport 3389 -j ACCEPT
+wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
